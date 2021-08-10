@@ -20,10 +20,11 @@ class MainActivity : AppCompatActivity() {
         val pref = PreferenceManager.getDefaultSharedPreferences(this)
         val editMemo = pref.getString("MEMO", "")
         binding.textInputEdit.setText(editMemo)
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.save_action, menu)
+        menuInflater.inflate(R.menu.action_list, menu)
         return true
     }
 
@@ -39,10 +40,9 @@ class MainActivity : AppCompatActivity() {
 
             R.id.action_delete -> {
                 pref.edit {
-                    
+                    binding.textInputEdit.setText("")
                 }
                 Toast.makeText(this, "deleted", Toast.LENGTH_SHORT).show()
-
             }
         }
         return super.onOptionsItemSelected(item)
