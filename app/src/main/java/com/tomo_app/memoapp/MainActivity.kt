@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         binding.textInputEdit.setText(editMemo)
     }
 
-    //オプションmenuを設定
+    //menuレイアウトを設定
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.action_list, menu)
         return true
@@ -53,12 +53,17 @@ class MainActivity : AppCompatActivity() {
         builder.setTitle("WARNING!")
             .setMessage("Delete all text?")
             .setPositiveButton("DONE") { _, _ ->
-                binding.textInputEdit.setText("")
-                Toast.makeText(this, "deleted", Toast.LENGTH_SHORT).show()
+                actionDelete()
             }
             .setNegativeButton("CANCEL") { _, _ ->
             }
             .create()
         builder.show()
+    }
+
+    //テキストリセット
+    private fun actionDelete() {
+        binding.textInputEdit.setText("")
+        Toast.makeText(this, "deleted", Toast.LENGTH_SHORT).show()
     }
 }
