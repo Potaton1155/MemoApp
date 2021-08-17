@@ -39,7 +39,6 @@ class MainActivity : AppCompatActivity() {
                 }
                 Toast.makeText(this, "saved", Toast.LENGTH_SHORT).show()
             }
-
             R.id.action_delete -> {
                 createDialog()
             }
