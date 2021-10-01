@@ -8,15 +8,32 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.edit
 import androidx.preference.PreferenceManager
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdSize
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import com.tomo_app.memoapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    lateinit var mAdView: AdView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //adMob設定
+        MobileAds.initialize(this) {}
+
+        mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
+
+        val adView = AdView(this)
+        adView.adSize = AdSize.BANNER
+        adView.adUnitId = "ca-app-pub-9442675762736593/1888910247"
+
 
         val pref = PreferenceManager.getDefaultSharedPreferences(this)
         val editMemo = pref.getString("MEMO", "")
@@ -31,14 +48,7 @@ class MainActivity : AppCompatActivity() {
 
     //menuのアイテム選択時の処理
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val pref = PreferenceManager.getDefaultSharedPreferences(this)
         when (item.itemId) {
-            R.id.action_save -> {
-                pref.edit {
-                    putString("MEMO", binding.textInputEdit.text.toString())
-                }
-                Toast.makeText(this, "saved", Toast.LENGTH_SHORT).show()
-            }
             R.id.action_delete -> {
                 createDialog()
             }
@@ -65,4 +75,14 @@ class MainActivity : AppCompatActivity() {
         binding.textInputEdit.setText("")
         Toast.makeText(this, "deleted", Toast.LENGTH_SHORT).show()
     }
+
+    //データ変更をコミットするタイミングはonPauseで行う
+    override fun onPause() {
+        super.onPause()
+        val pref = PreferenceManager.getDefaultSharedPreferences(this)
+        pref.edit {
+            putString("MEMO", binding.textInputEdit.text.toString())
+        }
+    }
+
 }
