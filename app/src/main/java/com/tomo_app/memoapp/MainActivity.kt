@@ -26,14 +26,8 @@ class MainActivity : AppCompatActivity() {
         //adMob設定
         MobileAds.initialize(this) {}
 
-        mAdView = findViewById(R.id.adView)
         val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
-
-        val adView = AdView(this)
-        adView.adSize = AdSize.BANNER
-        adView.adUnitId = "ca-app-pub-9442675762736593/1888910247"
-
+        binding.adView.loadAd(adRequest)
 
         val pref = PreferenceManager.getDefaultSharedPreferences(this)
         val editMemo = pref.getString("MEMO", "")
