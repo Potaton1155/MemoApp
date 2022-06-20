@@ -8,4 +8,34 @@
     <string name="text_size">Text Size</string>
     <string name="char_count">TextView</string>
     <string name="total">Total:</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="introduction">Introduction</string>
+    <string name="information_to_be_collected">Information to be collected</string>
+    <string name="about_personal_information">About personal information</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="privacypolicy">PrivacyPolicy</string>
+
+    <string name="introduction_text">Potaton ("we", "us", or "our") develops and operates applications for smartphones ("applications"). By using the Application, you are deemed to have agreed to the following terms and conditions.</string>
+    <string name="information_text">The application we distribute uses Google AdMob to distribute advertisements.We obtain ad IDs for this purpose, but we do not use them to identify individuals.</string>
+    <string name="personal_text">As a general rule, we do not obtain personal information from our users.</string>
+    <string name="disclaimer_text">We do not guarantee that the application is suitable for the user\'s specific purpose, that it has the expected functions, commercial value, accuracy, and usefulness, or that it is free from defects.
+We can change the specifications of the app at our convenience. We shall not be liable for any termination, modification, or unavailability of the application, loss of data or breakdown or damage to machinery resulting from the use of the application, or any other damages incurred by the user in connection with the application.</string>
+
+    <string name="introduction_jp">はじめに</string>
+    <string name="information_to_be_collected_jp">収集する情報について</string>
+    <string name="about_personal_information_jp">個人情報について</string>
+    <string name="disclaimer_jp">免責事項</string>
+
+    <string name="introduction_text_jp">Potaton（以下「当方」）は、スマートフォン用アプリケーション（以下「アプリ」）を開発・運用しています。本アプリのご使用によって、下記の規約に同意していただいたものとみなします。</string>
+    <string name="information_text_jp">当方が配信するアプリでは、広告配信のためにGoogle AdMobを使用しております。
+そのために広告IDを取得していますが、個人を特定するためなどには使用しておりません。</string>
+    <string name="personal_text_jp">当方は、原則としてご利用ユーザーの個人情報を取得することはありません。</string>
+    <string name="disclaimer_text_jp">アプリがご利用ユーザーの特定の目的に適合すること、期待する機能・商品的価値・正確性・有用性を有すること、および不具合が生じないことについて、何ら保証するものではありません。
+当方の都合によりアプリの仕様を変更できます。アプリの提供の終了、変更、または利用不能、アプリの利用によるデータの消失または機械の故障もしくは損傷、その他アプリに関してユーザーが被った損害につき、賠償する責任を一切負わないものとします。</string>
+    <string name="language_en">English</string>
+    <string name="language_jp">日本語</string>
+    <string name="back">back</string>
+
+
+
 </resources>

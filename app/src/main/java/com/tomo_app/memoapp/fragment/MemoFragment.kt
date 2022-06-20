@@ -10,6 +10,7 @@ import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.edit
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.preference.PreferenceManager
 import com.google.android.material.snackbar.Snackbar
 import com.tomo_app.memoapp.R
@@ -88,6 +89,10 @@ class MemoFragment : Fragment(), TextSizeDialogFragment.DialogListener {
             }
             R.id.size -> {
                 TextSizeDialogFragment().show(childFragmentManager, "text_size_dialog")
+                true
+            }
+            R.id.privacy_policy -> {
+                findNavController().navigate(R.id.action_memoFragment_to_privacyPolicyFragment)
                 true
             }
             else -> super.onOptionsItemSelected(item)

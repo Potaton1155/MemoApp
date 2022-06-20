@@ -2,18 +2,23 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/privacy_policy"
+        android:icon="@drawable/ic_baseline_privacy_tip_24"
+        android:title="@string/privacy_policy"
+        app:showAsAction="always" />
+    <item
         android:id="@+id/size"
         android:icon="@drawable/ic_baseline_format_size_24"
         android:title="@string/size"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
     <item
         android:id="@+id/color"
         android:icon="@drawable/ic_baseline_format_color_text_24"
         android:title="@string/color"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
     <item
         android:id="@+id/delete"
         android:icon="@drawable/ic_baseline_delete_24"
         android:title="@string/delete"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 </menu>

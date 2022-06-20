@@ -7,8 +7,8 @@ import com.google.android.gms.ads.MobileAds
 import com.tomo_app.memoapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedinstancestate: Bundle?) {
         super.onCreate(savedinstancestate)
