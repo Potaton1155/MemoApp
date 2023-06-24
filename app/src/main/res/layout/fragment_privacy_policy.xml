@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:scrollbars="vertical"
+        tools:context=".fragment.PrivacyPolicyFragment">
+
+
+        <TextView
+            android:id="@+id/titlePrivacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="40sp"
+            android:autoSizeMinTextSize="20sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:text="@string/privacypolicy"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/language_en"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="18sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="@string/language_en"
+            android:textColor="#757575"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/Introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeMinTextSize="16sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:background="#D0B1C8F6"
+            android:lineSpacingMultiplier="1"
+            android:padding="5dp"
+            android:text="@string/introduction"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#000000"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/IntroductionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeMinTextSize="14sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:lineSpacingMultiplier="1"
+            android:padding="2dp"
+            android:text="@string/introduction_text"
+            android:textColor="#474747"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/Information_to_be_collected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeMinTextSize="16sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:background="#D0B1C8F6"
+            android:lineSpacingMultiplier="1"
+            android:padding="5dp"
+            android:text="@string/information_to_be_collected"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#000000"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/InformationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeMinTextSize="14sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:lineSpacingMultiplier="1"
+            android:padding="2dp"
+            android:text="@string/information_text"
+            android:textColor="#474747"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/About_personal_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeMinTextSize="16sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:background="#D0B1C8F6"
+            android:lineSpacingMultiplier="1"
+            android:padding="5dp"
+            android:text="@string/about_personal_information"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#000000"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/PersonalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeMinTextSize="14sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:lineSpacingMultiplier="1"
+            android:padding="2dp"
+            android:text="@string/personal_text"
+            android:textColor="#474747"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/Disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeMinTextSize="16sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:background="#D0B1C8F6"
+            android:lineSpacingMultiplier="1"
+            android:padding="5dp"
+            android:text="@string/disclaimer"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#000000"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/DisclaimerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeMinTextSize="14sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:lineSpacingMultiplier="1"
+            android:padding="2dp"
+            android:text="@string/disclaimer_text"
+            android:textColor="#474747"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/language_jp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="16sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="@string/language_jp"
+            android:textColor="#757575"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/introduction_jp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeMinTextSize="16sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:background="#D0B1C8F6"
+            android:lineSpacingMultiplier="1"
+            android:padding="5dp"
+            android:text="@string/introduction_jp"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#000000"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/introductionText_jp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeMinTextSize="14sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:lineSpacingMultiplier="1"
+            android:padding="2dp"
+            android:text="@string/introduction_text_jp"
+            android:textColor="#474747"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/information_to_be_collected_jp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeMinTextSize="16sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:background="#D0B1C8F6"
+            android:lineSpacingMultiplier="1"
+            android:padding="5dp"
+            android:text="@string/information_to_be_collected_jp"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#000000"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/informationText_jp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeMinTextSize="14sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:lineSpacingMultiplier="1"
+            android:padding="2dp"
+            android:text="@string/information_text_jp"
+            android:textColor="#474747"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/about_personal_information_jp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeMinTextSize="16sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:background="#D0B1C8F6"
+            android:lineSpacingMultiplier="1"
+            android:padding="5dp"
+            android:text="@string/about_personal_information_jp"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#000000"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/personalText_jp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeMinTextSize="14sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:lineSpacingMultiplier="1"
+            android:padding="2dp"
+            android:text="@string/personal_text_jp"
+            android:textColor="#474747"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/disclaimer_jp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeMinTextSize="16sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:background="#D0B1C8F6"
+            android:lineSpacingMultiplier="1"
+            android:padding="5dp"
+            android:text="@string/disclaimer_jp"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#000000"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/disclaimerText_jp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeMinTextSize="14sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:lineSpacingMultiplier="1"
+            android:padding="2dp"
+            android:text="@string/disclaimer_text_jp"
+            android:textColor="#474747"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/backButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/back" />
+    </LinearLayout>
+</ScrollView>
